@@ -50,7 +50,7 @@ fi
 
 #IFS="|" read -r atomic_number name symbol type atomic_mass melting_point boiling_point <<< "$required_data"
 required_data=$(echo "$required_data" | sed 's/^ *//')
-IFS="|" read -r ATOMIC_NUMBER NAME SYMBOL TYPE ATOMIC_MASS MELTING_POINT BOILING_POINT<<< "$required_data"
+IFS="|" read -r ATOMIC_NUMBER NAME SYMBOL TYPE ATOMIC_MASS MELTING_POINT BOILING_POINT <<< "$required_data"
 
 echo "The element with atomic number $ATOMIC_NUMBER is $NAME ($SYMBOL). It's a $TYPE, with a mass of $ATOMIC_MASS amu. $NAME has a melting point of $MELTING_POINT celsius and a boiling point of $BOILING_POINT celsius."
 
